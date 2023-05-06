@@ -64,11 +64,11 @@ function App() {
       <div className="container my-3">
 
         <Routes>
-          <Route exact path="/about" element={<About />}> 
+          <Route exact path="/about" element={<About mode={mode} />}> 
             {/*  javascript do partial search for your page so add 'exact' keyword to get right results */}
           </Route>
           
-          <Route exact path="/" element={ <TextForm showAlert={showAlert} heading="Enter the text below to analyze" mode={mode} />}>
+          <Route exact path="/" element={ <TextForm showAlert={showAlert} heading="Try TextUtils - Word counter, character counter, sort by word!" mode={mode} />}>
          
           </Route>
         </Routes>

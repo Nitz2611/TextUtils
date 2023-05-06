@@ -43,15 +43,15 @@ export default function TextForm(props) {
     return (
         <>
         <div style={{color: props.mode=== 'dark'? 'white':'black'}}>
-            <h1>{props.heading}</h1>
+            <h1 className='mb-3'>{props.heading}</h1>
         <div className="mb-3">
             
-            <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode=== 'dark'? '#1e3354':'white' , color: props.mode=== 'dark'? 'white':'black'}} id="myBox" rows="8"></textarea>
+            <textarea className="form-control" value={text} onChange={handleOnChange} style={{backgroundColor: props.mode=== 'dark'? '#315388':'white' , color: props.mode=== 'dark'? 'white':'black'}} id="myBox" rows="8"></textarea>
         </div>
-        <button type="button" className="btn btn-primary mx-1" onClick={handleUpClick}>convert to uppercase</button>
-        <button type="button" className="btn btn-primary mx-1" onClick={handleLoClick}>convert to Lowercase</button>
-        <button type="button" className="btn btn-primary mx-1" onClick={handleClearClick}>Clear</button>
-        <button type="button" className="btn btn-primary mx-1" onClick={handleSortClick}>Sort by words</button>
+        <button disabled={text.length===0} type="button" className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>convert to uppercase</button>
+        <button disabled={text.length===0} type="button" className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>convert to Lowercase</button>
+        <button disabled={text.length===0} type="button" className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Clear</button>
+        <button disabled={text.length===0} type="button" className="btn btn-primary mx-1 my-1" onClick={handleSortClick}>Sort by words</button>
         </div>
         <div className="container" style={{color: props.mode=== 'dark'? 'white':'black'}}>
             <h2>Your text summary</h2>
@@ -59,7 +59,7 @@ export default function TextForm(props) {
             <p>{0.008*text.trim().split(/\s+/).filter(Boolean).length} Minutes to read this.</p>
             
             <h2>Preview</h2>
-            <p>{text.length>0?text:'enter something above to preview here'}</p>
+            <p>{text.length>0?text:'nothing to preview here!'}</p>
         </div>
         </>
     )
