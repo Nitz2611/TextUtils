@@ -32,12 +32,6 @@ TextUtils is a web application, and there is no need for installation. Simply vi
 
 If you would like to contribute to this project, please open an issue or create a pull request with your proposed changes.
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- Thanks to Lorem Ipsum for providing placeholder text.
 
 ---
