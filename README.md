@@ -16,11 +16,11 @@ TextUtils is a simple web application that provides various text manipulation ut
 
 ## Live Demo
 
-Visit the live demo of TextUtils [here](https://nitz2611-textutils.netlify.app/).
+Visit the live demo of TextUtils [here](https://text-manipulator1.netlify.app/).
 
 ## Installation
 
-TextUtils is a web application, and there is no need for installation. Simply visit the [live demo](https://nitz2611-textutils.netlify.app/) to use the application.
+TextUtils is a web application, and there is no need for installation. Simply visit the [live demo](https://text-manipulator1.netlify.app/) to use the application.
 
 ## Usage
 
